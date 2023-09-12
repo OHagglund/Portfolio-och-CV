@@ -6,12 +6,65 @@
             font-weight: 100;
 }
 
+/* navbar */
+
+.navbar {
+    background-color: rgb(71, 70, 70);
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+}
+
+.navitem {
+    display: flex;
+    height: 70px;
+    align-items: center;
+    margin-top: 10px;
+
+}
+
+.navitem1 {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    color: white;
+    padding-left: 20px;
+}
+
+.navitem1>ol {
+    list-style: none;
+    text-decoration: none;
+}
+
+.navitem1>ol>li>a {
+    text-decoration: none;
+    color: white;
+    padding-right: 50px;
+}
+
+.navbar a:hover {
+
+    color: white;
+    text-decoration: underline;
+
+}
+
 
 /* startsida */
 
 .startsida {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    
     height: 100vh
+    
 }
 
 
@@ -19,7 +72,6 @@
     content: "";
     background-image: url("./img/pexels-bri-schneiter-346529.jpg");
     background-size: cover;
-
     background-position: center;
     position: absolute;
     top: 0;
@@ -34,61 +86,291 @@
 
 .container-wrapper{
     display: flex;
-    color: whitesmoke;
+    color: white;
+    text-align: center;
     justify-content: center;
+    flex-direction: column;
+
 
 }
 
 .header-title{
     display: flex;
-    align-items: center;
+    text-align: center;
+    justify-content: center;
     font-size: 100px;
+    padding-bottom: 30px;
 }
 
-/* navbar */
-
-.navbar {
-    background-color: rgb(71, 70, 70);
-    height: 90px;
+.header-sub-title {
     display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 16px;
+    letter-spacing: 1.75;
+    /* background-color: rgba(63, 63, 62,0.2); */
+    /* height: 50px; */
+    /* width: 600px; */
+}
+
+.header-detail a{
+    text-decoration: none;
+    color: white;
+
+    
+}
+.devider-line{
+    letter-spacing: 5px;
+    margin-left: 5px;
+}
+
+
+
+/* om mig */
+
+@media (max-width: 1080px) {
+    .container-om-mig {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 90px);
+        background-color: rgb(216, 214, 214);
+        gap: 50px;
+        flex-direction: column;
+    }
+
+
+    .om-mig-item-right {
+        display: flex;
+        max-width: 500px;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .om-mig-item-left {
+        display: flex;
+        max-width: 750px;
+        height: 300px;
+        justify-content: space-between;
+        flex-direction: column;
+        align-content: center;
+        padding: 30px;
+    }
+
+    .oliver-img {
+
+        filter: grayscale(50%);
+        box-shadow: 0px 6px 60px rgba(0, 0, 0, 0.3);
+        filter: saturate(50%);
+    }
+
+
+    .om-mig-h2 {
+        display: flex;
+        font-size: 30px;
+        align-self: center;
+        text-align: center;
+    }
+
+    .om-mig-h6 {
+        display: flex;
+        text-transform: uppercase;
+        font-size: 22px;
+        letter-spacing: 2px;
+        align-self: center;
+    }
+
+    .om-mig-paragraf{
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (min-width:1081px) {
+
+.container-om-mig{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 90px);
+    background-color: rgb(216, 214, 214);
+    gap: 50px;
+}
+
+.om-mig-item-right {
+    display: flex;
+    width: 400px;
+    height: 400px;
     justify-content: space-between;
+    flex-direction: column;
+}
+
+.om-mig-item-left {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.oliver-img{
+
+    filter: grayscale(50%);
+    box-shadow: 0px 6px 60px rgba(0, 0, 0, 0.3);
+    filter: saturate(50%);
+}
+
+
+.om-mig-h2 {
+    display: block;
+    font-size: 25px;
     padding-left: 20px;
+    border-left: solid gray;
+}
+
+.om-mig-h6 {
+    display: block;
+    align-self: flex-start;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+}
+/* Css för skärmar mindre än 920 px */
+
+
+
+/* utbildning & arbetsliverfarenhet */
+
+.container-bakgrund {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 90px);
+    background-color: rgb(243, 240, 240);
+    gap: 50px;
+}
+
+.bakgrund-item-left {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    justify-content: start;
+    flex-direction: column;
+
+
+}
+
+.bakgrund-item-right {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    justify-content: space-between;
+    flex-direction: column;
+
+
+}
+
+
+
+.bakgrund-paragraf {
+    display: block;
+    border-right:solid gray ;
     padding-right: 20px;
-    position: fixed;
-    width: 100%;
+
+}
+
+.bakgrund-h2 {
+    display: block;
+    font-size: 35px;
+    padding-left: 20px;
+    border-left: solid gray;
+    margin-top: 50px;
+
+}
+
+.bakgrund-h6 {
+    display: block;
+    align-self: flex-start;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+
+}
+
+/* portfolio */
+
+.portfolio{
+    display: flex;
+        height: calc(100vh - 90px);
+        background-color: rgb(255, 255, 255);
+        justify-content: center;
     
 }
 
-.navitem {
+.container-portfolio{
     display: flex;
-    height: 70px;
     align-items: center;
-    margin-top: 10px;
-
+    gap: 50px;
 }
 
-.navitem1 {
-display: flex;
-    text-decoration: none;
-    align-items: center;
-    color: white;
-    padding-left: 20px;
-}
-
-.navitem1>ol {
-    list-style: none;
-    text-decoration: none;
-}
-.navitem1>ol>li>a{
-    text-decoration: none;
-    color: white;
+.portfolio-item-right {
+    display: flex;
+    max-width: 600px;
+    height: 400px;
+    justify-content: space-evenly;
+    flex-direction: column;
     padding-right: 50px;
 }
-.navbar a:hover {
 
-    color: white;
-    text-decoration: underline;
+.portfolio-item-left {
+    display: flex;
+    max-width: 600px;
+    height: 400px;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+.portfolio-img1 {
+object-fit: contain;
+
+}
+
+
+.portfolio-h2 {
+    display: block;
+    font-size: 25px;
+    padding-left: 20px;
+    border-left: solid gray;
+}
+
+.portfolio-h6 {
+    display: block;
+    align-self: flex-start;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.portfolio-button{
+    display: flex;
     
+}
+
+.portfolio-button span{
+    margin-right: 20px;
+    background-color: gray;
+    padding: 6px;
+    border-radius: 50px;
+}
+
+.portfolio-länkar>a {
+    text-decoration: none;
+    color: black;
+    margin-right: 30px;
+    padding: 10px;
+    border-bottom: solid 1px black;
 }
 
 
