@@ -265,9 +265,10 @@
 .bakgrund-item-right {
     display: flex;
     width: 400px;
-    height: 400px;
+    height: 450px;
     justify-content: space-between;
     flex-direction: column;
+    border-right: solid gray;
 
 
 }
@@ -276,8 +277,8 @@
 
 .bakgrund-paragraf {
     display: block;
-    border-right:solid gray ;
     padding-right: 20px;
+    line-height: 1.5;
 
 }
 
@@ -373,4 +374,47 @@ object-fit: contain;
     border-bottom: solid 1px black;
 }
 
+/* kontakt */
+
+.container-kontakt
+{
+    height: 50vh;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kontakt-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    text-align: center;
+
+}
+
+.kontakt-item h6{
+    font-size: 15px;
+
+}
+
+.kontakt-item h2{
+    font-size: 40px;
+    padding-top: 20px;
+}
+
+.kontakt-item ol{
+    display: flex;
+    padding-top: 70px;
+    list-style: none;
+}
+
+.kontakt-item li{
+    padding: 20px;
+}
+
+.footer{
+    padding-top: 200px;
+}
 
