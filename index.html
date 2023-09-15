@@ -1,215 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Merriweather&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./style.css" />
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <section>
-      <!-- navbar -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Merriweather&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./style.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <section>
+            <!-- navbar -->
 
-      <nav class="navbar">
-        <div class="brand-title">
-          <img
-            src="./img/o-hagglund-low-resolution-logo-white-on-transparent-background.png"
-            alt="Ohagglund-logo"
-            height="70px"
-          />
-        </div>
-        <a href="#" class="toggle-button">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </a>
-        <div class="navbar-links">
-          <ul>
-            <li><a href="#top">Hem</a></li>
-            <li><a href="#om-mig">Om mig</a></li>
-            <li><a href="#bakgrund">Bakgrund</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#kontakt">Kontakt</a></li>
-          </ul>
-        </div>
-      </nav>
-    </section>
-    <!-- startsida  -->
-    <section>
-      <div class="startsida bakgrund">
-        <div id="home" class="container-wrapper">
-          <h1 class="header-title">Oliver Hägglund</h1>
-          <h2 class="header-sub-title">
-            <span class="header-detail">Webbutvecklare</span>
-            <span class="devider-line">-</span
-            ><span class="header-detail"
-              ><a href="mailto:oliver.hagglund91@gmail.com" aria-label="Email">
-                Oliver.Hagglund91@gmail.com</a
-              ></span
-            ><span class="devider-line"> - </span
-            ><span class="header-detail"
-              ><a href="tel:+46739994070" aria-label="Phone">
-                073-999 40 70</a
-              ></span
-            >
-          </h2>
-        </div>
-      </div>
-    </section>
-
-    <!-- om mig -->
-
-    <section id="om-mig">
-      <div class="container-om-mig" id="om-mig">
-        <div class="om-mig-item-left">
-          <h6 class="om-mig-h6">Om Oliver Hägglund</h6>
-          <h2 class="om-mig-h2">
-            Målinriktad och engagerad Webbutvecklare som brinner för teknik,
-            kreativitet och problemlösning.
-          </h2>
-          <p class="om-mig-paragraf">
-            Det är när jag inte har lösningen på ett problem jag jobbar som
-            bäst. Att hitta lösningen på ett problem är det som driver mig
-            framåt. När jag inte kodar, uppskattar jag familjetid, tränar på
-            gymmet, fördjupar mig i historieböcker och njuter av
-            datorspel.Träning är ett måste, och jag är en flitig besökare på
-            gymmet, strävande efter en frisk kropp och sinne. Historieböckerna
-            för mig tillbaka i tiden, och datorspel är min avkoppling.
-          </p>
-        </div>
-        <div class="om-mig-item-right">
-          <img class="oliver-img" src="./img/oliver.jpg" alt="" />
-        </div>
-      </div>
-    </section>
-
-    <!-- min bakkgrund -->
-
-    <section id="bakgrund">
-      <div class="container-bakgrund" id="bakgrund">
-        <div class="bakgrund-item-left">
-          <h6 class="bakgrund-h6">Utbildning & ARBETSLIVSERFARENHET</h6>
-          <h2 class="bakgrund-h2">
-            Erfarenhet genom arbete, utbildning samt egna projekt.
-          </h2>
-        </div>
-        <div class="bakgrund-item-right">
-          <p class="bakgrund-paragraf">
-            Jag började min karriär som snickare på Skanska 2011, där jag deltog
-            i byggandet av flerfamiljshus. Efter några år kände jag att det var
-            dags för vidareutbildning. Så jag åkte först till USA för att
-            studera grafisk design i ett år.
-          </p>
-          <br />
-          <p class="bakgrund-paragraf">
-            När jag kom tillbaka till Sverige studerade jag till BIM-projektör
-            på Stockholms Tekniska Institut, vilket ledde till ett jobb på
-            OpenPoint AB. Där arbetade jag som BIM/GIS-projektör med att
-            utveckla en webbplattform för punktmoln/BIM/GIS-data. Min roll var
-            att utveckla lösningar för att visualisera BIM/GIS-data i en
-            webbmiljö.
-          </p>
-          <br />
-          <p class="bakgrund-paragraf">
-            Det var detta som väckte mitt intresse för webbutveckling och ledde
-            mig till min nuvarande utbildning som .NET-utvecklare vid Jönköping
-            Universitet.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Portfolio -->
-
-    <section id="portfolio">
-      <div class="header-portfolio">
-        <h6>PORTFOLIO</h6>
-        <h2>Mina Projekt</h2>
-      </div>
-
-      <div class="portfolio">
-        <div class="container-portfolio">
-          <div class="portfolio-item-left">
-            <img
-              class="portfolio-img1"
-              src="./img/macbook-pro-mockup-with-a-white-iphone-6-in-front-view-a11923.png"
-              alt=""
-            />
-          </div>
-          <div class="portfolio-item-right">
-            <h6 class="portfolio-h6">Projekt</h6>
-            <h2 class="portfolio-h2">Portfolio</h2>
-            <div class="portfolio-button">
-              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            <nav class="navbar">
+                <div class="brand-title">
+                    <img
+                        src="./img/o-hagglund-low-resolution-logo-white-on-transparent-background.png"
+                        alt="Ohagglund-logo"
+                        height="70px"
+                    />
+                </div>
+                <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                <div class="navbar-links">
+                    <ul>
+                        <li><a href="#top">Hem</a></li>
+                        <li><a href="#om-mig">Om mig</a></li>
+                        <li><a href="#bakgrund">Bakgrund</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#kontakt">Kontakt</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+        <!-- startsida  -->
+        <section>
+            <div class="startsida bakgrund">
+                <div id="home" class="container-wrapper">
+                    <h1 class="header-title">Oliver Hägglund</h1>
+                    <h2 class="header-sub-title">
+                        <span class="header-detail">Webbutvecklare</span>
+                        <span class="devider-line">-</span
+                        ><span class="header-detail"
+                            ><a
+                                href="mailto:oliver.hagglund91@gmail.com"
+                                aria-label="Email"
+                            >
+                                Oliver.Hagglund91@gmail.com</a
+                            ></span
+                        ><span class="devider-line"> - </span
+                        ><span class="header-detail"
+                            ><a href="tel:+46739994070" aria-label="Phone">
+                                073-999 40 70</a
+                            ></span
+                        >
+                    </h2>
+                </div>
             </div>
-            <p class="portfolio-paragraf">
-              Min personliga webbplats för att förmedla vem jag är och vad jag
-              gjort. Byggd med HTML och CSS
-            </p>
-            <div class="portfolio-länkar">
-              <a href="">Visa Webbplats</a>
-              <a href="">Visa Github</a>
+        </section>
+
+        <!-- om mig -->
+
+        <section id="om-mig">
+            <div class="container-om-mig" id="om-mig">
+                <div class="om-mig-item-left">
+                    <h6 class="om-mig-h6">Om Oliver Hägglund</h6>
+                    <h2 class="om-mig-h2">
+                        Målinriktad och engagerad Webbutvecklare som brinner för
+                        teknik, kreativitet och problemlösning.
+                    </h2>
+                    <p class="om-mig-paragraf">
+                        Det är när jag inte har lösningen på ett problem jag
+                        jobbar som bäst. Att hitta lösningen på ett problem är
+                        det som driver mig framåt. När jag inte kodar,
+                        uppskattar jag familjetid, tränar på gymmet, fördjupar
+                        mig i historieböcker och njuter av datorspel.Träning är
+                        ett måste, och jag är en flitig besökare på gymmet,
+                        strävande efter en frisk kropp och sinne.
+                        Historieböckerna för mig tillbaka i tiden, och datorspel
+                        är min avkoppling.
+                    </p>
+                </div>
+                <div class="om-mig-item-right">
+                    <img
+                        class="oliver-img"
+                        src="./img/oliver.jpg"
+                        alt="profil bild"
+                    />
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="kontakt">
-      <div class="container-kontakt">
-        <div class="kontakt-item">
-          <h6>Tveka inte att höra av dig.</h6>
-          <h2>Kontakta mig för mer information.</h2>
-          <ol>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/oliver-h%C3%A4gglund-1b908213b/"
-                target="_blank"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="45"
-                  height="45"
-                  class="bi bi-linkedin"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
-                  />
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/OHagglund" target="_blank"
-                ><img src="./img/github.svg" alt="github logo" height="45px"
-              /></a>
-            </li>
-            <li>
-              <a
-                href="mailto:oliver.hagglund91@gmail.com"
-                aria-label="Email"
-                target="_blank"
-                ><img src="./img/envelope.svg" alt="email logo" height="45"
-              /></a>
-            </li>
-            <li>
-              <a href="tel:+46739994070" aria-label="Phone" target="_blank"
-                ><img
-                  src="./img/circle-phone-flip.svg"
-                  alt="phone logo"
-                  height="45"
-              /></a>
-            </li>
-          </ol>
-          <h6 class="footer">Oliver Hägglund</h6>
-        </div>
-      </div>
-    </section>
-  </body>
+        </section>
+
+        <!-- min bakkgrund -->
+
+        <section id="bakgrund">
+            <div class="container-bakgrund" id="bakgrund">
+                <div class="bakgrund-item-left">
+                    <h6 class="bakgrund-h6">
+                        Utbildning & ARBETSLIVSERFARENHET
+                    </h6>
+                    <h2 class="bakgrund-h2">
+                        Erfarenhet genom arbete, utbildning samt egna projekt.
+                    </h2>
+                </div>
+                <div class="bakgrund-item-right">
+                    <p class="bakgrund-paragraf">
+                        Jag började min karriär som snickare på Skanska 2011,
+                        där jag deltog i byggandet av flerfamiljshus. Efter
+                        några år kände jag att det var dags för
+                        vidareutbildning. Så jag åkte först till USA för att
+                        studera grafisk design i ett år.
+                    </p>
+                    <br />
+                    <p class="bakgrund-paragraf">
+                        När jag kom tillbaka till Sverige studerade jag till
+                        BIM-projektör på Stockholms Tekniska Institut, vilket
+                        ledde till ett jobb på OpenPoint AB. Där arbetade jag
+                        som BIM/GIS-projektör med att utveckla en webbplattform
+                        för punktmoln/BIM/GIS-data. Min roll var att utveckla
+                        lösningar för att visualisera BIM/GIS-data i en
+                        webbmiljö.
+                    </p>
+                    <br />
+                    <p class="bakgrund-paragraf">
+                        Det var detta som väckte mitt intresse för
+                        webbutveckling och ledde mig till min nuvarande
+                        utbildning som .NET-utvecklare vid Jönköping
+                        Universitet.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+
+        <section id="portfolio">
+            <div class="header-portfolio">
+                <h6>PORTFOLIO</h6>
+                <h2>Mina Projekt</h2>
+            </div>
+
+            <div class="portfolio">
+                <div class="container-portfolio">
+                    <div class="portfolio-item-left">
+                        <img
+                            class="portfolio-img1"
+                            src="./img/macbook-pro-mockup-with-a-white-iphone-6-in-front-view-a11923.png"
+                            alt="bild på hemsida"
+                        />
+                    </div>
+                    <div class="portfolio-item-right">
+                        <h6 class="portfolio-h6">Projekt</h6>
+                        <h2 class="portfolio-h2">Portfolio</h2>
+                        <div class="portfolio-button">
+                            <span>HTML</span><span>CSS</span
+                            ><span>JavaScript</span>
+                        </div>
+                        <p class="portfolio-paragraf">
+                            Min personliga webbplats för att förmedla vem jag är
+                            och vad jag gjort. Byggd med HTML och CSS
+                        </p>
+                        <div class="portfolio-länkar">
+                            <a href="">Visa Webbplats</a>
+                            <a href="">Visa Github</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="kontakt">
+            <div class="container-kontakt">
+                <div class="kontakt-item">
+                    <h6>Tveka inte att höra av dig.</h6>
+                    <h2>Kontakta mig för mer information.</h2>
+                    <ol>
+                        <li>
+                            <a
+                                href="https://www.linkedin.com/in/oliver-h%C3%A4gglund-1b908213b/"
+                                target="_blank"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="45"
+                                    height="45"
+                                    class="bi bi-linkedin"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path
+                                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                                    />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://github.com/OHagglund"
+                                target="_blank"
+                                ><img
+                                    src="./img/github.svg"
+                                    alt="github logo"
+                                    height="45px"
+                            /></a>
+                        </li>
+                        <li>
+                            <a
+                                href="mailto:oliver.hagglund91@gmail.com"
+                                aria-label="Email"
+                                target="_blank"
+                                ><img
+                                    src="./img/envelope.svg"
+                                    alt="email logo"
+                                    height="45"
+                            /></a>
+                        </li>
+                        <li>
+                            <a
+                                href="tel:+46739994070"
+                                aria-label="Phone"
+                                target="_blank"
+                                ><img
+                                    src="./img/circle-phone-flip.svg"
+                                    alt="phone logo"
+                                    height="45"
+                            /></a>
+                        </li>
+                    </ol>
+                    <h6 class="footer">Oliver Hägglund</h6>
+                </div>
+            </div>
+        </section>
+    </body>
 </html>
